@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Kennedy Waweru Njau</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'JetBrains Mono', monospace;
+      background: #0a0a0a;
+      color: #e0fef1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      text-align: center;
+      padding: 12px;
+      background-color: rgba(0, 255, 204, 0.08);
+      border-radius: 8px;
+    }
+
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 6px #00ffcc;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffcc;
+      margin-bottom: 20px;
+    }
+
+    .contacts {
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .contacts a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    .quote {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #00ffaa;
+      border-top: 1px dashed #00ffcc33;
+      padding-top: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .quote span {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid #00ffaa;
+      animation: typing 5s steps(60, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #00ffaa }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="challenges.html">Lab Challenges</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>📬 Get In Touch</h2>
+    <div class="contacts">
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kennedy-njau-65b175230/" target="_blank">kennedy-njau</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Kennedy299" target="_blank">Kennedy299</a></p>
+      <p><strong>Email:</strong> <a href="mailto:eddykens309@gmail.com">eddykens309@gmail.com</a></p>
+      <p><strong>Phone:</strong> 0110413132 / 0727295462</p>
+    </div>
+
+    <div class="quote">
+      <span>"Hack the system, but never your integrity."</span>
+    </div>
+  </div>
+</body>
+
+</html>

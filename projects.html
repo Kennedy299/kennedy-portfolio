@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Kennedy Waweru Njau</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'JetBrains Mono', monospace;
+      background: #0d0d0d;
+      color: #e0fef1;
+      padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 12px;
+      background-color: rgba(0, 255, 204, 0.08);
+      border-radius: 8px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 6px #00ffcc;
+    }
+
+    .project-section {
+      background: linear-gradient(to right, #111, #181818);
+      border-left: 4px solid #00ffcc;
+      border-radius: 8px;
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 900px;
+      box-shadow: 0 0 18px rgba(0, 255, 204, 0.1);
+      transform: translateY(30px);
+      opacity: 0;
+      animation: slideIn 0.8s ease-out forwards;
+    }
+
+    .project-section:nth-child(even) {
+      animation-delay: 0.3s;
+    }
+
+    .project-section:nth-child(odd) {
+      animation-delay: 0.6s;
+    }
+
+    h2, h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffcc;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="challenges.html">Lab Challenges</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h2 style="text-align:center;">💻 Featured Projects</h2>
+
+  <div class="project-section">
+    <h3>🔐 Secure File Vault (University Project)</h3>
+    <p>This Django-based system supports role-based document uploads, approvals, and audit logs. It features secure file encryption, user authentication, and access logging to simulate a real-world corporate document vault.</p>
+    <p><span class="highlight">Technologies:</span> Django, SQLite, Bootstrap, HTML5</p>
+    <p><span class="highlight">Features:</span> Encrypted Uploads, Admin Review Dashboard, Role Permissions</p>
+  </div>
+
+  <div class="project-section">
+    <h3>📱 Telemedicine Android App (Personal Training)</h3>
+    <p>An Android mobile application that connects patients to doctors. Users can book consultations, view medical records, and receive health advice in a user-friendly interface built without Firebase.</p>
+    <p><span class="highlight">Technologies:</span> Java, XML, Android Studio</p>
+    <p><span class="highlight">Features:</span> Chat with Doctor, Book Appointments, Health Tips Panel</p>
+  </div>
+
+  <div class="project-section">
+    <h3>🏧 ATM Management System (Course Project)</h3>
+    <p>A simulation of ATM functionalities including secure login, balance inquiry, deposit, and withdrawal. Designed with clear UI/UX for easy testing and learning in Java.</p>
+    <p><span class="highlight">Technologies:</span> Java, Swing GUI</p>
+    <p><span class="highlight">Features:</span> User Login, Transaction Logs, Balance Updates</p>
+  </div>
+</body>
+
+</html>
